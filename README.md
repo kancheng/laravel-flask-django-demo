@@ -2,6 +2,8 @@
 
 此專案目標：快速建立三個環境，並各自輸出 `Hello world`。
 
+> 該專案為工作測試內容使用 XAMPP & Anaconda & Windows，正式開發建議使用 Ubuntu、OpenSuSE、Docker、MariaDB。
+
 ## 1) Laravel (PHP)
 
 ### 建立專案
@@ -194,6 +196,22 @@ python manage.py runserver 8002
 
 ---
 
+## Python 套件安裝（requirements.txt）
+
+專案根目錄提供 `requirements.txt`，目前包含：
+
+```txt
+flask
+django
+```
+
+使用方式：
+
+```powershell
+cd f:\xampp\htdocs\laravel-flask-django-demo
+pip install -r requirements.txt
+```
+
 ## 建議目錄結構
 
 ```text
@@ -201,6 +219,7 @@ laravel-flask-django-demo/
   ├─ laravel-app/
   ├─ flask-app/
   ├─ django-app/
+  ├─ requirements.txt
   └─ README.md
 ```
 
