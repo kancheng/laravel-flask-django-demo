@@ -52,9 +52,15 @@ composer create-project laravel/laravel laravel-app
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return 'Hello world from Laravel!';
+    return view('hello');
+});
+
+Route::get('/welcome', function () {
+    return view('welcome');
 });
 ```
+
+註記：`hello.blade.php` 是由原本的 `welcome.blade.php` 複製後，再依需求改成自己的內容（例如加上 Hello World 與測試紀錄）。
 
 ### 啟動
 
